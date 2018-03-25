@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="16G1036" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Order" representedClassName="OrderMO" syncable="YES">
+        <attribute name="orderCusEMail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderCusName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderCusPhoneNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderTime" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="isSold" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="SellingItem" inverseName="soldTO" inverseEntity="SellingItem" syncable="YES"/>
+    </entity>
+    <entity name="SellingItem" representedClassName="SellingItemMO" syncable="YES">
+        <attribute name="barcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSold" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="itemCondition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemID" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="itemName" attributeType="String" syncable="YES"/>
+        <attribute name="itemQuantity" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orderNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sellingNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sellingPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="suggestPrice" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="added" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="SellingSection" inverseName="addItems" inverseEntity="SellingSection" syncable="YES"/>
+        <relationship name="soldTO" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Order" inverseName="isSold" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="SellingSection" representedClassName="SellingSectionMO" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seasom" attributeType="String" syncable="YES"/>
+        <attribute name="sectionID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="year" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="addItems" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="SellingItem" inverseName="added" inverseEntity="SellingItem" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="addr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Order" positionX="-54" positionY="-9" width="128" height="150"/>
+        <element name="SellingItem" positionX="-36" positionY="54" width="128" height="285"/>
+        <element name="SellingSection" positionX="-18" positionY="162" width="128" height="135"/>
+        <element name="User" positionX="0" positionY="171" width="128" height="180"/>
+    </elements>
+</model>

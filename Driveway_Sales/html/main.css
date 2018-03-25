@@ -1,0 +1,129 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans';
+	color: black;
+	background: #EEEEEE;
+}
+
+*, *:before, *:after {
+	/* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+	-webkit-box-sizing: border-box; 
+
+	/* Firefox (desktop or Android) 28- */
+	-moz-box-sizing: border-box;
+
+	/* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+	box-sizing: border-box;
+}
+
+div {
+	width: 100%; /* Auto load all Div's as 100% wide to reduce code below */
+	display: block;
+}
+
+div#titleBar {
+	height: 2em;
+	line-height: 2em;
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#name {
+	height: 1.5em;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+}
+
+img#profile_pic {
+	width: 100%;
+	display: block;
+}
+
+.blue-gradiant {
+	background: #f2f5f6; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+}
+
+hr.width-75 {
+	width: 75%;
+	border-top: 1px dashed #AAA;
+}
+
+
+div.experienceDetails {
+	position: relative;
+	padding: 10px;
+}
+
+div.experienceDetails span.company {
+	font-family: Times;
+	font-size: 1.85em;
+	color: #000;
+	position: relative;
+	font-weight: 700;
+	line-height: 1.85em;
+}
+
+div.experienceDetails span.address {
+	font-size: 0.75em;
+	position: relative;
+	margin-left: 0.5em;
+	color: #424141;
+}
+
+div.experienceDetails span.yearSpan {
+	font-size: 0.75em;
+	position: absolute;
+	right: 10px;
+	top: 1.6em;
+	color: #858585;
+}
+
+div.experienceDetails span.positionTitle {
+	display: block;
+	font-size: 1.1em;
+	color: green;
+	position: relative;
+	top: -0.7em;
+	margin-left: 15px;
+	font-weight: 500;
+	line-height: 1.3em;
+	color: #424141;
+}
+
+div.experienceDetails p {
+	display: block;
+	font-size: 0.9em;
+	margin-left: 15px;
+	position: relative;
+	top: -1.5em;
+	color: #4D4C4C;
+}
+
+div#footer {
+	height: 0.85em;
+	line-height: 0.85em;
+	font-size: 0.85em;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0.85em;
+	color: #4D4C4C;
+}
+
+a {
+	text-decoration: none;
+	color: #858585;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+		
+		<title>Mobile Friendly Page</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="html/main.css" />
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,800' type='text/css' media='all'/>
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="javascript/jQuery.all.js"></script>
+		<script type="text/javascript" src="javascript/dropDown.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//Run code upload Page load
+				enableDropDownForIds('#userInfo, #createAccount');
+			});
+		</script>
+	</head>
+	<body><!--style="height:100px;width:100px;"-->
+		<div id="titleBar" class="blue-gradiant">Jingzhi Zhang</div>
+		<img src="html/profile_pic.jpg" id="profile_pic" alt="Profile Picture"/>
+		<div id="name" class="blue-gradiant">EXPERIENCES AND INTERESTS</div>
+        <div class="experienceDetails">
+        <span class="company">NORTHERN ILLINOIS UNIVERSITY</span>
+        <span class="address">DEKALB, ILLINOIS, US</span>
+        <span class="yearSpan">2017 SPRING</span>
+        <span class="positionTitle">GRADUATE STUDENT</span>
+        <p>HAVING FUN LEARNING TO CODE IN SWIFT. PLANNING TO START MY CAREER AS A MOBILE APPLICATION DEVELOPER.</p>
+        </div>
+
+        
+        
+        
+        
+		<hr class="width-75">
+		<div class="experienceDetails">
+        
+        <span class="company">NORTHERN ILLINOIS UNIVERSITY</span><span class="address">DEKALB, ILLINOIS, US</span>
+        <span class="yearSpan">FROM FALL 2016 TO NOW</span>
+        <span class="positionTitle">GRADUATE STUDENT</span>
+        <p>STUDYING COMPUTER SCIENCE</p>
+        </div>
+
+        
+        
+        
+        <hr class="width-75">
+        <div class="experienceDetails">
+        <span class="company">LIAONING TECHNICAL UNIVERSITY</span>
+        <span class="address">SHENYANG, LIAONING, CN</span>
+        <span class="yearSpan">2011-2015</span>
+        <span class="positionTitle">UNDERGRADUATE STUDENT</span>
+        <p>STUDYING COMPUTER SCIENCE AND TECHNOLOGY</p>
+        </div>
+        <div id="footer">
+        Designed by Steven Brice (Former student of Kai Rush). Updated for CSCI 321/521, Spring 2017 Course.
+        </div>
+        </body>
+    </html>
